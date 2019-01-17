@@ -1,13 +1,10 @@
-# SimpleTodo
+# Project 1 - *Simple Todo*
 
-Simple Todo for Codepath
-# Project 1 - *Name of App Here*
+**Simple Todo** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-**Name of your app** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+Submitted by: **David Jeanty**
 
-Submitted by: **Your Name Here**
-
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
