@@ -4,7 +4,7 @@
 
 Submitted by: **David Jeanty**
 
-Time spent: **4** hours spent in total
+Time spent: **24** hours spent in total
 
 ## User Stories
 
