@@ -6,6 +6,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+        <item name="android:fontFamily">@font/lobster</item>
 
+    </style>
+    <style name="ListFont" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/aguafina_script</item>
+        <item name="android:textColor">@color/colorTitle</item>
+    </style>
 </resources>
