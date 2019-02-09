@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public View getView(int position, View convertView, ViewGroup parent) {
                 View v = super.getView(position, convertView, parent);
                 TextView tv = (TextView) v.findViewById(android.R.id.text1);
-                tv.setTextColor(Color.parseColor("#c51304"));
+                tv.setTextColor(Color.parseColor("#842d1b"));
                 tv.setTextSize(20);
                 Typeface typeface = ResourcesCompat.getFont(getContext(),R.font.crete_round_italic);
                 tv.setTypeface(typeface);
@@ -63,14 +63,14 @@ public void onAddNewItem(View v){
     itemsAdapter.add(itemText);
     etNewItem.setText("");
     writeItems();
-    Toast.makeText(getApplicationContext(),"item added to list", Toast.LENGTH_SHORT).show();
+    Toast.makeText(getApplicationContext(),R.string.item_add, Toast.LENGTH_SHORT).show();
 }
 private void setupListViewListerner(){
     Log.i("MainActivity", "Setting up listener on list View");
         lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int i, long l) {
-            Log.i("MainActovity", "Item removed from list "+i);
+            Log.i("MainActovity", R.string.item_remove+" "+i);
                 items.remove(i);
                 itemsAdapter.notifyDataSetChanged();
                 writeItems();
@@ -100,7 +100,7 @@ private void setupListViewListerner(){
             items.set(position,updateItem);
             itemsAdapter.notifyDataSetChanged();
             writeItems();
-            Toast.makeText(this,"item update successly", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.item_update, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -112,7 +112,7 @@ private void readItems(){
     try {
         items = new ArrayList<>(FileUtils.readLines(getFileData(), Charset.defaultCharset()));
     } catch (IOException e) {
-        Log.e("MainActivity", "Error reading file", e);
+        Log.e("MainActivity", String.valueOf(R.string.error_read), e);
         items = new ArrayList<>();
     }
 }
@@ -120,7 +120,7 @@ private  void writeItems(){
     try {
         FileUtils.writeLines(getFileData(),items);
     } catch (IOException e) {
-        Log.e("MainActivity", "Error writing file", e);
+        Log.e("MainActivity", String.valueOf(R.string.error_write), e);
     }
 }
 }

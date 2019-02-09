@@ -18,7 +18,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:ems="10"
-        android:hint="Enter item "
+        android:hint="@string/enter_item"
         android:textColor="@color/colorTypping"
         android:fontFamily="@font/lobster"
         android:inputType="textMultiLine" />
@@ -34,6 +34,6 @@
         android:layout_marginLeft="6dp"
         android:layout_marginTop="40dp"
         android:onClick="onSaveItem"
-        android:text="Save"
+        android:text="@string/sauvegarde"
         android:textColor="@color/colorPrimary" />
 </RelativeLayout>

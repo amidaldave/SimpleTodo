@@ -3,6 +3,7 @@ package com.codepath.simpletodo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -21,7 +22,8 @@ public class EditItemActivity extends AppCompatActivity {
         etItemText = (EditText) findViewById(R.id.etItemText);
         etItemText.setText(getIntent().getStringExtra(ITEM_TEXT));
         position= getIntent().getIntExtra(ITEM_POSITION,0);
-        getSupportActionBar().setTitle("Edit "+etItemText.getText().toString());
+        getSupportActionBar().setTitle(getSupportActionBar().getTitle()+" "+etItemText.getText().toString());
+        Log.i("MainActivity", String.valueOf(R.string.edit));
     }
 
     public void onSaveItem(View v){
