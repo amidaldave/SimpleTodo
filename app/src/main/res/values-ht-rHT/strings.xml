@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleTodo</string>
+    <string name="add">Mete</string>
+    <string name="add_a_new_item_here">Mete yon lot la</string>
+    <string name="sauvegarde">Sere</string>
+    <string name="enter_item">Rantre yon lot</string>
+    <string name="item_update">Chanjman fèt</string>
+    <string name="item_add">Li rantre nan lis la</string>
+    <string name="item_remove">Li soti nan lis la</string>
+    <string name="error_read">Gen yon pwoblem pandan y\'ap li fichye a</string>
+    <string name="error_write">Gen yon pwoblem pandan y\'ap ekri nan fichye a</string>
+    <string name="edit">Chanje</string>
+</resources>

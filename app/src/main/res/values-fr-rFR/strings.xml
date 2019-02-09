@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleTodo</string>
+    <string name="add">Ajouter</string>
+    <string name="add_a_new_item_here">Ajouter un nouveau élément ici</string>
+    <string name="sauvegarde">Sauvegarder</string>
+    <string name="enter_item">Entrer un élément</string>
+    <string name="item_update">Elément modifié avec succès</string>
+    <string name="item_add">Elément ajouté à la liste</string>
+    <string name="item_remove">Elément enlevé de la liste</string>
+    <string name="error_read">Erreur aucours de lecture du fichier</string>
+    <string name="error_write">Erreur aucours de l\'écriture du fichier</string>
+    <string name="edit">Modifier</string>
+</resources>
